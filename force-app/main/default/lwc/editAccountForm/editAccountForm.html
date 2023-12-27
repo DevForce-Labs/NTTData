@@ -1,0 +1,34 @@
+<!--
+  @description       : 
+  @author            : patrick@devforcelabs.com.br | 27 99241-5014
+  @group             : 
+  @last modified on  : 12-26-2023
+  @last modified by  : patrick@devforcelabs.com.br | 27 99241-5014
+  Modifications Log
+  Ver   Date         Author                                        Modification
+  1.0   12-22-2023   patrick@devforcelabs.com.br | 27 99241-5014   Initial Version
+-->
+<template>
+  <lightning-card title="Edit" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+      <lightning-record-edit-form
+        object-api-name="Account"
+        record-id={recordId}
+        onsuccess={handleSuccess}
+      >
+        <lightning-input-field field-name="Name"></lightning-input-field>
+        <lightning-input-field
+          field-name="AccountNumber"
+        ></lightning-input-field>
+        <lightning-input-field field-name="Type"></lightning-input-field>
+        <lightning-button
+          class="slds-m-left_x-small"
+          variant="brand"
+          type="submit"
+          label="Editar"
+        >
+        </lightning-button>
+      </lightning-record-edit-form>
+    </div>
+  </lightning-card>
+</template>
